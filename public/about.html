@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commun.io-Chat</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(to left, #057956, #08a576, #e3e3e3);
+      color: #333;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .app-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .app-title-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 25px;
+    }
+
+    .blinking-cursor {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #333;
+      animation: blink 0.7s step-end infinite;
+    }
+
+    @keyframes blink {
+      from, to { color: transparent; }
+      50% { color: #333; }
+    }
+
+    #main-sec {
+      width: 900px;
+      line-height: 50px;
+      margin: 20px;
+      padding: 20px;
+      text-align: left;
+      position: absolute;
+      left: 20px;
+      margin-left: 10%;
+    }
+
+    #display-text, .blinking-cursor {
+      font-size: 30px;
+      font-weight: 1800;
+    }
+
+    .developer-credit {
+      font-size: 0.9em;
+      color: #ffffff;
+    }
+
+    .nav-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-title-container">
+      <h1 class="app-title">Commun.io</h1>
+      <p class="developer-credit">Developed by <span class="developer-name"><b><i>Varsz</i></b></span></p>
+    </div>
+    <nav class="nav-links">
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <div id="main-sec">
+    <p id="main-text">
+      <span id="display-text"></span><span class="blinking-cursor">|</span>
+    </p>
+  </div>
+
+  <script>
+    var i = 0;
+    var txt = "Hello, this is a clone chat application mainly inspired from Omegle and Whatsapp. This is a micro project which has a long way to be improvised to the fittest.";
+    var displayText = document.getElementById("display-text");
+    var speed = 50;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        displayText.innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>

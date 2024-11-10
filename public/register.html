@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commun.io-Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1 classs="app-title">Commun.io</h1>
+        <p class="developer-credit">Developed by <span class="developer-name"><b><i>Varsz</i></b></span></p>
+    </header>
+  <div class="container">
+    <div class="login-box">
+      <h2>Sign-Up</h2>
+      <form id="registerForm">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="regusername" name="regusername" required>
+        </div>
+        
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="regpassword" name="regpassword" required>
+        </div>
+
+        <div class="input-group">
+            <label for="repassword">Re-enter Password</label>
+            <input type="password" id="repassword" name="repassword" required>
+          </div>
+        
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+      
+      <p class="register-link">
+        Already have an account? <a href="login.html">Log in</a>
+      </p>
+    </div>
+  </div>
+  <script src="clientreg.js"></script>
+</body>
+</html>

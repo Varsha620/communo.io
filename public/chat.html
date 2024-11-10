@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commun.io-Chat</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div>
+        <header class="app-header">
+            <h1 classs="app-title">Commun.io</h1>
+            <p class="developer-credit">Developed by <span class="developer-name"><b><i>Varsz</i></b></span></p>
+            <button id="logoutButton" class="logout-btn">Logout</button>
+        </header>
+    </div>
+    <div class="chat-container">
+            <div id="userList" class="user-list">
+                <h3>Online Users</h3>
+                <!-- Online users will be listed here -->
+            </div>
+        
+        <div class="chat-main">
+            <div class="chat-header">
+                <div class="user-info">
+                    <span id="chatWith">Select a user to chat</span>
+                </div>
+            </div>
+            <div id="messages" class="chat-messages">
+                <!-- Chat messages will appear here -->
+            </div>
+            <form id="messageForm" class="message-form">
+                <input type="text" id="messageInput" placeholder="Type a message..." required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
