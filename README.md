@@ -68,12 +68,6 @@ Welcome to **Commun.io**, a simple real-time chat application where users can re
 
 ---
 
-## 📸 Screenshots
-
-> _You can add some screenshots here of the login, chat, and about pages for better presentation._
-
----
-
 ## ⚠️ Known Issues
 
 - JWT token handling and user authentication are hardcoded placeholders currently (`user_jwt_token`, `recipient_user_id` in `script.js`).
