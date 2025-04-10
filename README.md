@@ -47,13 +47,7 @@ Welcome to **Commun.io**, a simple real-time chat application where users can re
 
 ![Screenshot 2025-04-10 205538](https://github.com/user-attachments/assets/8e3b3432-b47e-4804-8a04-373a862e8395)
 *Working example(logged in through different portals)*
-
-
-
-
-
-
-  
+ 
 ## 🚀 Getting Started
 
 ### Prerequisites
