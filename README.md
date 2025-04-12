@@ -74,7 +74,6 @@ Welcome to **Commun.io**, a simple real-time chat application where users can re
 
 4. Open the app:
    - Navigate to `http://localhost:3000/login.html` to login
-   - Or `http://localhost:3000/register.html` to create a new account
 
 ---
 
