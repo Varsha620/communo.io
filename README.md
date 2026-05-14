@@ -75,13 +75,6 @@ Welcome to **Commun.io**, a simple real-time chat application where users can re
 4. Open the app:
    - Navigate to `http://localhost:3000/login.html` to login
 
----
-
-## ⚠️ Known Issues
-
-- JWT token handling and user authentication are hardcoded placeholders currently (`user_jwt_token`, `recipient_user_id` in `script.js`).
-
----
 
 ## 💡 Future Improvements
 
